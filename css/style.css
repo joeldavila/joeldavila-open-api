@@ -1,0 +1,392 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  align-items: center;
+  width: 100%;
+  color: white;
+  background-color: rgb(23, 132, 196);
+  margin: 0;
+  padding: 0;
+}
+
+.data-font-size {
+  font-size: 1em;
+  font-weight: 700;
+  margin: 5px 0 5px 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  background-color: rgb(23, 132, 196);
+}
+
+button {
+  padding: 15px 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.2s ease;
+  margin: 5px;
+  color: white;
+  background-color: rgb(23, 132, 196);
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: rgb(20, 101, 147);
+
+  cursor: pointer;
+}
+header img {
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  margin: 0;
+  flex: 0;
+}
+
+header h1 {
+  flex: 2;
+}
+body {
+  background-color: rgba(0, 0, 0, 0.705);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+}
+
+input,
+select,
+textarea {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  width: 100%;
+  transition: all 0.2s ease;
+  background-color: #fafafa;
+  margin: 5px;
+}
+
+select {
+  width: 100%;
+}
+
+#container {
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.361);
+}
+
+#results-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  padding: 10px;
+
+  color: white;
+  background-image: url("/images/day.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-image 0.8s ease-in-out;
+  box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.361);
+}
+
+#header-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#city-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#city-title h1 {
+  margin: 0;
+  padding: 0;
+}
+
+#sub-header {
+  width: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-evenly;
+  align-items: center;
+  border: solid 1px white;
+  border-radius: 5px;
+}
+
+#sub-header p {
+  margin: 0;
+  padding: 0 5px 0 5px;
+}
+
+#second-container {
+  width: 100%;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+#second-container div {
+  padding: 5px;
+  margin: 5px;
+  width: 80px;
+  text-align: center;
+  border: solid white 1px;
+  border-radius: 5px;
+}
+
+#lower-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#left-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#right-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-alignment {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 5px;
+  border-radius: 5px;
+
+  border: solid 1px white;
+}
+
+#location p {
+  padding: 0;
+  margin: 0;
+}
+
+h3 {
+  text-align: center;
+  font-size: smaller;
+  padding: 0;
+  margin: 5px 0 5px 0;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.sub-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px;
+  }
+
+  #info {
+    border-radius: 0;
+  }
+
+  .info-alignment {
+    width: 100%;
+  }
+
+  #second-container div {
+    padding: 5px;
+    margin: 5px;
+    width: 89px;
+    text-align: center;
+    border: solid white 1px;
+    font-size: 1.2em;
+    border-radius: 5px;
+  }
+
+  #lower-container {
+    gap: 5px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  #second-container div {
+    padding: 5px;
+    margin: 5px;
+    width: 150px;
+    text-align: center;
+    border: solid white 1px;
+    font-size: 1.6em;
+    border-radius: 5px;
+  }
+
+  #input-container {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  #input-container {
+    width: 60%;
+  }
+
+  #second-container div {
+    padding: 5px;
+    margin: 5px;
+    width: 150px;
+    text-align: center;
+    border: solid white 1px;
+    font-size: 1.6em;
+    border-radius: 5px;
+  }
+}
+
+@media (min-width: 1441px) {
+  #input-container {
+    width: 60%;
+  }
+
+  #second-container div {
+    padding: 5px;
+    margin: 5px;
+    width: 150px;
+    text-align: center;
+    border: solid white 1px;
+    font-size: 1.6em;
+    border-radius: 5px;
+  }
+
+  body {
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  html {
+    background-color: rgba(255, 255, 255, 0.412);
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  .data-font-size {
+    font-size: 1.3em;
+  }
+
+  form {
+    box-shadow: none;
+    background-color: rgb(23, 132, 196);
+  }
+
+  button {
+    background-color: white;
+    color: black;
+  }
+
+  #info {
+    box-shadow: none;
+  }
+
+  button:hover {
+    background-color: rgb(23, 132, 196);
+    color: white;
+  }
+}
